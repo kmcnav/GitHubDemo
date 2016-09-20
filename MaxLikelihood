@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------
-  Edited this file to use 50 values
+  Edited this file to use 100 values
   Example of estimating parameters using maximum likelihood
   File of ~carey/p7291dir/maxlik.ex.sas
   Problem: Given 50 observations what is the mean and
@@ -10,8 +10,8 @@
 title Example of Maximum Likelihood Estimation;
 title2 Mean and standard deviation of a normal distribution;
 data maxlik;
-* generate 50 data random values from a normal distribution;
-   array x x1-x50;
+* generate 100 data random values from a normal distribution;
+   array x x1-x100;
    do over x; x = rannor(91748); end;
 * calculate the mean and the standard deviation of the
   50 scores;
